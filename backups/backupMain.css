@@ -1,0 +1,222 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+/* Global */
+html,
+body,
+section {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+
+}
+
+
+/* Pattern styles */
+.container {
+    display: flex;
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Left Panel */
+
+.left-half {
+    position: relative;
+    background-color: black;
+    flex: 1;
+}
+
+.left-half article {
+    position: absolute;
+}
+
+
+/* Profile Image */
+article img {
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/* Social Links */
+
+.socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialMedia i {
+    color: white;
+    font-size: 24px;
+}
+
+.socialMedia a {
+    transition: all .5s ease-in-out;
+}
+
+.socialMedia a:hover {
+    transform: scale(1.5);
+}
+
+article img,
+.content,
+.socialMedia {
+    padding: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.content p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Right Panel */
+
+.right-half {
+    background-color: white;
+    flex: 1;
+    color: black;
+    padding: 30px;
+
+
+}
+
+.right-half article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right-half h1 {
+    font-weight: bold;
+    font-size: 38px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.right-half p {
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Content */
+.articleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+/* Contact */
+.formArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.btn {
+    margin-top: 5px;
+    width: 90px;
+    height: 30px;
+    line-height: 2.5;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 0px 10px 30px -6px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+
+
+/* Media */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+
+    }
+
+    /* Left Panel */
+    .left-half {
+        flex: 2;
+    }
+
+    /* Profile Image */
+    article img {
+        width: 150px;
+
+    }
+
+    article img,
+    .content,
+    .socialMedia {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+
+    /* Right */
+    .right-half article {
+        margin-top: 600px;
+    }
+
+    .right-half h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .articleContent {
+        align-items: center;
+    }
+
+    .formArea {
+        align-items: center;
+    }
+
+}
